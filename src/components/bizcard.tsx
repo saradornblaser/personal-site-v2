@@ -23,7 +23,7 @@ export default function Bizcard({ onPressInvader, invaderPressed }: Props) {
         <div
           className={`bizcard animated ${invaderPressed ? 'hinge' : 'flipInX'}`}
         >
-          <div className="name">Ian Sibner</div>
+          <div className="name">Sara Dornblaser</div>
           <div className="blurb">
             {documentToReactComponents(
               data.contentfulTextForIndexPageBusinessCardContentRichTextNode
@@ -33,13 +33,13 @@ export default function Bizcard({ onPressInvader, invaderPressed }: Props) {
           <div className="links">
             <ul>
               <li>
-                <a href="mailto:sibnerian@gmail.com">Email</a>
+                <a href="mailto:saradornblaser@gmail.com">Email</a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/sibnerian">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/saradornblaser" target="_blank">LinkedIn</a>
               </li>
               <li>
-                <a href="http://github.com/sibnerian">Github</a>
+                <a href="http://github.com/saradornblaser" target="_blank">Github</a>
               </li>
               <li className="invader" onClick={onPressInvader}>
                 <a href="#"> </a>

@@ -9,15 +9,15 @@ const contentfulConfig = {
 
 module.exports = {
   siteMetadata: {
-    title: 'Ian Sibner',
+    title: 'Sara Dornblaser',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'sibnerian',
-        short_name: 'sibnerian',
+        name: 'saradornblaser',
+        short_name: 'saradornblaser',
         start_url: '/',
         background_color: '#663399',
         theme_color: '#663399',

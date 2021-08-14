@@ -1,8 +1,8 @@
 {
-  "name": "sibnerian-site",
-  "description": "Ian Sibner personal site",
+  "name": "personal-site",
+  "description": "Sara Dornblaser personal site",
   "version": "1.0.0",
-  "author": "Ian Sibner <sibnerian@gmail.com>",
+  "author": "Sara Dornblaser <saradornblaser@gmail.com>",
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^14.1.1",
     "@types/react-helmet": "^6.0.0",
