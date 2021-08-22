@@ -1,0 +1,42 @@
+#canvas-wrapper {
+  display: block;
+  margin: 0 auto;
+  width: 1020px;
+}
+
+h2 {
+  color: black(73, 73, 227);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+canvas {
+  border: 1px solid black;
+  text-align: center;
+  width: 1020px;
+  height: 255px;
+}
+
+#replay-button {
+  color: black;
+  background-color: rgb(36, 153, 216);
+  height: 40px;
+  width: 160px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#points-display{
+  height: 40px;
+  width: 160px;
+  text-align: center;
+  vertical-align: middle;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  font-weight: bold;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+

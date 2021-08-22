@@ -2,14 +2,15 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 
-import './animate.css';
-import './index.scss';
+import './layout.scss';
 
 type Props = {
   children: React.ReactNode;
+  description: string;
+  keywords: string[];
 };
 
-const Layout = ({ children }: Props) => (
+const Layout = ({ children, description, keywords }: Props) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -25,15 +26,14 @@ const Layout = ({ children }: Props) => (
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            { name: 'description', content: description },
+            { name: 'keywords', content: keywords.join(', ') },
           ]}
         >
           <html lang="en" />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Press+Start+2P&display=swap"
-            rel="stylesheet"
-          />
+          <link rel="preconnect" href="https://fonts.googleapis.com"/>
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+          <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet"/>
         </Helmet>
         <div className="content">{children}</div>
       </>
